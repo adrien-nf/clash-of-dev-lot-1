@@ -1,4 +1,4 @@
-import { Title } from "@/features/app/components";
+import { Title } from "@/features/app/components/title";
 
 export const App = () => {
   return (
