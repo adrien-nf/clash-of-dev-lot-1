@@ -12,4 +12,5 @@ function BasePointerIcon(props: React.SVGProps<SVGSVGElement>) {
 }
 
 const PointerIcon = React.memo(BasePointerIcon);
-export default PointerIcon;
+
+export { PointerIcon };

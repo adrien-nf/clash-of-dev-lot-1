@@ -1,13 +1,10 @@
-import type { Meta, StoryObj } from "@storybook/react";
-import { Character } from "./character";
-import image from "../../assets/characters/artist.png";
-import PointerIcon from "../icons/pointer-icon";
+import { Character } from "@/components/character";
+import image from "@/assets/characters/artist.png";
+import { SmileyIcon } from "@/components/icons";
 
-const meta = {
-  component: Character,
-  tags: ["autodocs"],
-  render: (args) => (
-    <Character {...args}>
+export function Boosted() {
+  return (
+    <Character color="orange">
       <Character.Header>
         <Character.Header.Graduation>
           <Character.Header.Graduation.Title>
@@ -38,7 +35,6 @@ const meta = {
             de jeu. Il maîtrise et retranscrit correctement chaque pixel de la
             maquette.
           </p>
-
           <p>
             Virtuose des couleurs il ne se trompe jamais de code HEX, de spacing
             ou de border-radius;&nbsp;
@@ -47,49 +43,10 @@ const meta = {
             </span>
           </p>
           <Character.CornerIcon>
-            <PointerIcon />
+            <SmileyIcon />
           </Character.CornerIcon>
         </Character.Body.Description>
       </Character.Body>
     </Character>
-  ),
-} satisfies Meta<typeof Character>;
-
-export default meta;
-type Story = StoryObj<typeof meta>;
-
-export const Purple: Story = {
-  args: {
-    color: "purple",
-  },
-};
-
-export const Pink: Story = {
-  args: {
-    color: "pink",
-  },
-};
-
-export const Green: Story = {
-  args: {
-    color: "green",
-  },
-};
-
-export const Blue: Story = {
-  args: {
-    color: "blue",
-  },
-};
-
-export const Yellow: Story = {
-  args: {
-    color: "yellow",
-  },
-};
-
-export const Orange: Story = {
-  args: {
-    color: "orange",
-  },
-};
+  );
+}
