@@ -20,4 +20,5 @@ function BaseBracketInCircleIcon(props: React.SVGProps<SVGSVGElement>) {
 }
 
 const BracketInCircleIcon = React.memo(BaseBracketInCircleIcon);
+
 export { BracketInCircleIcon };
