@@ -1,6 +1,7 @@
 import { Character } from "@/components/character";
-import image from "@/assets/characters/builder.png";
 import { BracketsIcon } from "@/components/icons";
+import { Chris } from "../tags/chris";
+import image from "@/assets/characters/builder.png";
 
 export function Builder() {
   return (
@@ -16,9 +17,7 @@ export function Builder() {
         </Character.Header.Graduation>
         <Character.Header.Name>Le bâtisseur de code</Character.Header.Name>
         <Character.Header.Tags>
-          <Character.Header.Tags.Item side="top-left">
-            @Chris
-          </Character.Header.Tags.Item>
+          <Chris />
         </Character.Header.Tags>
       </Character.Header>
       <Character.Body>
@@ -35,9 +34,9 @@ export function Builder() {
             surement fini le challenge en s'assurant d'avoir le code le plus
             clair et le plus propre des 36 participants.
           </p>
-          <Character.CornerIcon>
+          <Character.Body.CornerIcon>
             <BracketsIcon />
-          </Character.CornerIcon>
+          </Character.Body.CornerIcon>
         </Character.Body.Description>
       </Character.Body>
     </Character>

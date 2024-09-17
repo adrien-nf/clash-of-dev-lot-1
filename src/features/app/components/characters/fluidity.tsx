@@ -1,6 +1,8 @@
 import { Character } from "@/components/character";
-import image from "@/assets/characters/artist.png";
 import { AsterixIcon } from "@/components/icons";
+import { Lina } from "../tags";
+import { Chris } from "../tags/chris";
+import image from "@/assets/characters/fluidity.png";
 
 export function Fluidity() {
   return (
@@ -8,44 +10,36 @@ export function Fluidity() {
       <Character.Header>
         <Character.Header.Graduation>
           <Character.Header.Graduation.Title>
-            Design
+            Motion
           </Character.Header.Graduation.Title>
           <Character.Header.Graduation.Score>
-            /6 pts
+            /3 pts
           </Character.Header.Graduation.Score>
         </Character.Header.Graduation>
-        <Character.Header.Name>L'artiste de renom</Character.Header.Name>
+        <Character.Header.Name>Le Maître de la Fluidité</Character.Header.Name>
         <Character.Header.Tags>
-          <Character.Header.Tags.Item side="top-left">
-            @maislina
-          </Character.Header.Tags.Item>
-          <Character.Header.Tags.Item side="top-left">
-            @sometime.crea
-          </Character.Header.Tags.Item>
-          <Character.Header.Tags.Item side="top-left">
-            @chris
-          </Character.Header.Tags.Item>
+          <Lina />
+          <Chris />
         </Character.Header.Tags>
       </Character.Header>
       <Character.Body>
         <Character.Body.Image src={image} />
         <Character.Body.Description>
           <p>
-            <span className="font-semibold">Le design</span>, c'est son terrain
-            de jeu. Il maîtrise et retranscrit correctement chaque pixel de la
-            maquette.
+            Aucun composant ne s'affiche sans une{" "}
+            <span className="font-semibold">animation soignée</span>. Ses
+            transitions sont légères, dynamiques et fluides, captivant
+            l'utilisateur à chaque interaction.
           </p>
 
           <p>
-            Virtuose des couleurs il ne se trompe jamais de code HEX, de spacing
-            ou de border-radius;&nbsp;
-            <span className="font-semibold">
-              Figma n'a aucun secret pour ce Dev de talent.
-            </span>
+            Ce dev a l'oeil et maitrise{" "}
+            <span className="font-semibold">le motion</span> mieux que n'importe
+            qui.
           </p>
-          <Character.CornerIcon>
+          <Character.Body.CornerIcon>
             <AsterixIcon />
-          </Character.CornerIcon>
+          </Character.Body.CornerIcon>
         </Character.Body.Description>
       </Character.Body>
     </Character>

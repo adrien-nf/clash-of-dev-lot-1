@@ -46,9 +46,9 @@ const meta = {
               Figma n'a aucun secret pour ce Dev de talent.
             </span>
           </p>
-          <Character.CornerIcon>
+          <Character.Body.CornerIcon>
             <PointerIcon />
-          </Character.CornerIcon>
+          </Character.Body.CornerIcon>
         </Character.Body.Description>
       </Character.Body>
     </Character>

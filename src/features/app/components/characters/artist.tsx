@@ -1,6 +1,7 @@
 import { Character } from "@/components/character";
-import image from "@/assets/characters/artist.png";
 import { PointerIcon } from "@/components/icons";
+import { Lina } from "../tags";
+import image from "@/assets/characters/artist.png";
 
 export function Artist() {
   return (
@@ -16,15 +17,7 @@ export function Artist() {
         </Character.Header.Graduation>
         <Character.Header.Name>L'artiste de renom</Character.Header.Name>
         <Character.Header.Tags>
-          <Character.Header.Tags.Item side="top-left">
-            @maislina
-          </Character.Header.Tags.Item>
-          <Character.Header.Tags.Item side="top-left">
-            @sometime.crea
-          </Character.Header.Tags.Item>
-          <Character.Header.Tags.Item side="top-left">
-            @chris
-          </Character.Header.Tags.Item>
+          <Lina />
         </Character.Header.Tags>
       </Character.Header>
       <Character.Body>
@@ -43,9 +36,9 @@ export function Artist() {
               Figma n'a aucun secret pour ce Dev de talent.
             </span>
           </p>
-          <Character.CornerIcon>
+          <Character.Body.CornerIcon>
             <PointerIcon />
-          </Character.CornerIcon>
+          </Character.Body.CornerIcon>
         </Character.Body.Description>
       </Character.Body>
     </Character>

@@ -1,6 +1,7 @@
 import { PropsWithChildren } from "react";
 import { BodyImage } from "./body-image";
 import { BodyDescription } from "./body-description";
+import { CornerIcon } from "./corner-icon";
 
 export type BodyProps = PropsWithChildren;
 
@@ -12,3 +13,4 @@ export function Body({ children }: BodyProps) {
 
 Body.Image = BodyImage;
 Body.Description = BodyDescription;
+Body.CornerIcon = CornerIcon;

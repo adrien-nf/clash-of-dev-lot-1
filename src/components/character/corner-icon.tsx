@@ -1,5 +1,4 @@
 import { PropsWithChildren } from "react";
-import PointerIcon from "../icons/pointer-icon";
 
 export type CornerIconProps = PropsWithChildren;
 
