@@ -10,13 +10,15 @@ import { Title } from "@/features/app/components/title";
 import { FullScreenSection } from "@/components/full-screen-section/full-screen-section";
 import { EnterFinals } from "@/features/app/components/enter-finals";
 import { Footer } from "@/components/footer";
+import { KingCard } from "@/components/king-card";
 
 export const App = () => {
   return (
     <div className="p-3 max-w-screen-2xl flex flex-col gap-3 snap-y relative">
-      <FullScreenSection>
-        <Title />
-      </FullScreenSection>
+      <Title />
+      <div className="flex flex-col items-center">
+        <KingCard />
+      </div>
       <section>
         <FullScreenSection className="top-4">
           <Artist />

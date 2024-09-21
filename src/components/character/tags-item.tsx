@@ -1,16 +1,19 @@
 import { PropsWithChildren } from "react";
-import { tagsItemStyle } from "./character.styles";
+import { tagsItemCursorStyle, tagsItemStyle } from "./character.styles";
 import { TagsItemCursorIcon } from "./tags-item-cursor-icon";
+import { twMerge } from "tailwind-merge";
 
 export type TagsItemProps = PropsWithChildren & {
-  side: "top-left" | "top-right" | "bottom-left" | "bottom-right";
+  side: "top-left" | "top-right";
+  color?: "purple" | "pink" | "green" | "blue" | "yellow" | "orange";
+  className?: string;
 };
 
-export function TagsItem({ children, side }: TagsItemProps) {
+export function TagsItem({ children, side, color, className }: TagsItemProps) {
   return (
-    <div className="flex flex-col gap-1">
-      <TagsItemCursorIcon className="group-[.bg-purple-light]/character:text-purple-main group-[.bg-pink-light]/character:text-pink-main group-[.bg-green-light]/character:text-green-main group-[.bg-blue-light]/character:text-blue-main group-[.bg-yellow-light]/character:text-yellow-main group-[.bg-orange-light]/character:text-orange-main" />
-      <div className={tagsItemStyle({ side })}>{children}</div>
+    <div className={twMerge("flex flex-col gap-1", className)}>
+      <TagsItemCursorIcon className={tagsItemCursorStyle({ side, color })} />
+      <div className={tagsItemStyle({ side, color })}>{children}</div>
     </div>
   );
 }
