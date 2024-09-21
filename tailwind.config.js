@@ -22,7 +22,7 @@ export default {
         blue: {
           light: "#BADAFF",
           main: "#6B93C0",
-          dark: "#6B93C0",
+          dark: "#5B7B9F",
         },
         yellow: {
           light: "#FFFAC2",
