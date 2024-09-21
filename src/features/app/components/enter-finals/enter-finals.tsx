@@ -1,4 +1,7 @@
 import { SmoothSmileyIcon } from "@/components/icons";
+import { StarBubble } from "./star-bubble";
+import { LightningBubble } from "./lightning-bubble";
+import { BracketsBubble } from "./brackets-bubble";
 
 export function EnterFinals() {
   return (
@@ -12,9 +15,14 @@ export function EnterFinals() {
           Click Me ? Might enter the finals
         </span>
       </div>
-      <button className="justify-end block bg-cod-beige py-[22px] w-44 rounded-[60px] text-nowrap self-center">
-        Enter Next Level
-      </button>
+      <div className="justify-end self-center relative">
+        <button className="relative peer block bg-cod-beige py-[22px] px-8 rounded-[60px] text-nowrap z-10 text-center hover:py-7 hover:px-10 transition-all font-semibold">
+          Enter Next Level
+        </button>
+        <StarBubble className="absolute top-0 -translate-x-1/4 -translate-y-1/4 transition-transform peer-hover:-translate-x-1/2 peer-hover:-translate-y-1/3 z-20" />
+        <LightningBubble className="absolute bottom-0 right-0 -translate-x-1/4 translate-y-1/2 transition-transform peer-hover:translate-x-1/2 peer-hover:translate-y-1/3 z-20" />
+        <BracketsBubble className="absolute top-0 right-0 translate-x-1/3 -translate-y-1/2 transition-transform peer-hover:translate-x-1/2 peer-hover:-translate-y-1/3" />
+      </div>
     </article>
   );
 }
