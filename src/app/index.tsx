@@ -11,10 +11,15 @@ import { FullScreenSection } from "@/components/full-screen-section/full-screen-
 import { EnterFinals } from "@/features/app/components/enter-finals";
 import { Footer } from "@/components/footer";
 import { KingCard } from "@/components/king-card";
+import { Bar } from "@/components/bar/bar";
+import { useScroll } from "framer-motion";
 
 export const App = () => {
+  const { scrollYProgress } = useScroll();
+
   return (
     <div className="p-3 max-w-screen-2xl flex flex-col gap-3 snap-y relative">
+      <Bar scale={scrollYProgress} />
       <Title />
       <div className="flex flex-col items-center">
         <KingCard />
@@ -39,7 +44,6 @@ export const App = () => {
           <Boosted />
         </FullScreenSection>
       </section>
-
       <section className="flex flex-col justify-between h-[calc(100vh-24px)] pb-6">
         <EnterFinals />
         <Footer />
