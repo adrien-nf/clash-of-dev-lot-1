@@ -36,6 +36,7 @@ export default {
         },
         "cod-dark": "#262625",
         "cod-white": "#FEFEFE",
+        "cod-beige": "#F3F3F1",
       },
       fontSize: { xs: ["12px", "20px"] },
     },

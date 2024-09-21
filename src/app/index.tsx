@@ -7,17 +7,41 @@ import {
   Secrets,
 } from "@/features/app/components/characters";
 import { Title } from "@/features/app/components/title";
+import { FullScreenSection } from "@/components/full-screen-section/full-screen-section";
+import { EnterFinals } from "@/features/app/components/enter-finals";
+import { Footer } from "@/components/footer";
 
 export const App = () => {
   return (
-    <div className="w-screen h-screen overflow-hidden overflow-y-scroll">
-      <Title />
-      <Artist />
-      <Builder />
-      <Fluidity />
-      <Breakpoint />
-      <Secrets />
-      <Boosted />
+    <div className="p-3 max-w-screen-2xl flex flex-col gap-3 snap-y relative">
+      <FullScreenSection>
+        <Title />
+      </FullScreenSection>
+      <section>
+        <FullScreenSection className="top-4">
+          <Artist />
+        </FullScreenSection>
+        <FullScreenSection className="top-8">
+          <Builder />
+        </FullScreenSection>
+        <FullScreenSection className="top-12">
+          <Fluidity />
+        </FullScreenSection>
+        <FullScreenSection className="top-16">
+          <Breakpoint />
+        </FullScreenSection>
+        <FullScreenSection className="top-20">
+          <Secrets />
+        </FullScreenSection>
+        <FullScreenSection className="top-24">
+          <Boosted />
+        </FullScreenSection>
+      </section>
+
+      <section className="flex flex-col justify-between h-[calc(100vh-24px)] pb-6">
+        <EnterFinals />
+        <Footer />
+      </section>
     </div>
   );
 };

@@ -7,7 +7,9 @@ export type BodyProps = PropsWithChildren;
 
 export function Body({ children }: BodyProps) {
   return (
-    <div className="flex flex-row gap-x-5 gap-y-8 flex-wrap">{children}</div>
+    <div className="flex flex-row gap-x-5 gap-y-8 h-full flex-wrap">
+      {children}
+    </div>
   );
 }
 

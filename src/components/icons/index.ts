@@ -6,3 +6,4 @@ export * from "./asterix-icon";
 export * from "./lightning-icon";
 export * from "./switch-icon";
 export * from "./smiley-icon";
+export * from "./smooth-smiley-icon";
