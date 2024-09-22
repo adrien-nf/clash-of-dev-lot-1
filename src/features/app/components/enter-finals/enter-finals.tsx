@@ -5,17 +5,17 @@ import { BracketsBubble } from "./brackets-bubble";
 
 export function EnterFinals() {
   return (
-    <article className="bg-[#262625] w-full flex flex-col gap-10 rounded-[60px] px-12 pt-10 pb-20 group/character overflow-hidden relative  justify-between">
-      <div className="flex flex-col gap-8">
+    <article className="bg-[#262625] w-full flex flex-col gap-10 rounded-[60px] px-12 pt-10 pb-20 group/character overflow-hidden relative h-full mb-4 justify-between">
+      <div className="flex flex-col gap-8 h-full">
         <span className="font-medium text-sm text-cod-white text-opacity-80">
           / FINALE02
         </span>
         <SmoothSmileyIcon className="text-5xl self-end mr-5" />
-        <span className="font-semibold text-[40px] text-justify text-cod-beige">
-          Click Me ? Might enter the finals
-        </span>
+        <div className="font-semibold text-[40px] flex justify-center flex-col text-justify flex-1 self-center text-cod-beige">
+          <span>Click Me ? Might enter the finals</span>
+        </div>
       </div>
-      <div className="justify-end self-center relative">
+      <div className="self-center relative">
         <button className="relative peer block bg-cod-beige py-[22px] px-8 rounded-[60px] text-nowrap z-10 text-center hover:py-7 hover:px-10 transition-all font-semibold">
           Enter Next Level
         </button>
