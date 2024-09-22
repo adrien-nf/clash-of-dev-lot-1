@@ -21,7 +21,9 @@ export function Artist() {
         </Character.Header.Tags>
       </Character.Header>
       <Character.Body>
-        <Character.Body.Image src={image} />
+        <Character.Body.Image src={image}>
+          <Lina />
+        </Character.Body.Image>
         <Character.Body.Description>
           <p>
             <span className="font-semibold">Le design</span>, c'est son terrain

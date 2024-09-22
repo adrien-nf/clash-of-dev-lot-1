@@ -1,10 +1,8 @@
 import { ImgHTMLAttributes } from "react";
-import { Lina } from "@/features/app/components/tags";
-import { Chris } from "@/features/app/components/tags/chris";
 
 export type BodyImageProps = ImgHTMLAttributes<HTMLImageElement>;
 
-export function BodyImage({ src, alt }: BodyImageProps) {
+export function BodyImage({ src, alt, children }: BodyImageProps) {
   return (
     <div className="inline-flex items-start justify-center relative">
       <img
@@ -13,9 +11,8 @@ export function BodyImage({ src, alt }: BodyImageProps) {
         className="object-contain max-w-full max-h-full"
       />
 
-      <div className="absolute flex flex-col right-0 top-0 -translate-y-8">
-        <Lina />
-        <Chris />
+      <div className="absolute flex flex-col right-0 top-0 translate-x-12 -translate-y-8 sm:hidden">
+        {children}
       </div>
     </div>
   );

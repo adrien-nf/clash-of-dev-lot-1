@@ -23,7 +23,10 @@ export function Fluidity() {
         </Character.Header.Tags>
       </Character.Header>
       <Character.Body>
-        <Character.Body.Image src={image} />
+        <Character.Body.Image src={image}>
+          <Lina />
+          <Chris />
+        </Character.Body.Image>
         <Character.Body.Description>
           <p>
             Aucun composant ne s'affiche sans une{" "}

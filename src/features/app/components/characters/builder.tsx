@@ -21,7 +21,9 @@ export function Builder() {
         </Character.Header.Tags>
       </Character.Header>
       <Character.Body>
-        <Character.Body.Image src={image} />
+        <Character.Body.Image src={image}>
+          <Chris />
+        </Character.Body.Image>
         <Character.Body.Description>
           <p>
             Ses lignes de code sont des fondations solides. C'est un{" "}

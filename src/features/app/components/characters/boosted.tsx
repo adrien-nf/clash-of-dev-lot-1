@@ -23,7 +23,10 @@ export function Boosted() {
         </Character.Header.Tags>
       </Character.Header>
       <Character.Body>
-        <Character.Body.Image src={image} />
+        <Character.Body.Image src={image}>
+          <Lina />
+          <Chris />
+        </Character.Body.Image>
         <Character.Body.Description>
           <p>
             Il excelle dans tous les domaines, alliant design, propreté de code,

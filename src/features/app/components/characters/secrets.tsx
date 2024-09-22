@@ -23,7 +23,10 @@ export function Secrets() {
         </Character.Header.Tags>
       </Character.Header>
       <Character.Body>
-        <Character.Body.Image src={image} />
+        <Character.Body.Image src={image}>
+          <Lina />
+          <Chris />
+        </Character.Body.Image>
         <Character.Body.Description>
           <p>
             Derrière une ligne de code bien choisie se cache un{" "}
