@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { Character } from "./character";
 import image from "../../assets/characters/artist.png";
-import PointerIcon from "../icons/pointer-icon";
+import { PointerIcon } from "../icons/pointer-icon";
 
 const meta = {
   component: Character,
