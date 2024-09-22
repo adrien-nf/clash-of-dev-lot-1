@@ -23,39 +23,41 @@ export const App = () => {
     <>
       <StickyHeader />
 
-      <div className="p-3 max-w-screen-2xl flex flex-col gap-3 snap-y relative pt-36">
+      <div className="p-3 sm:p-6 max-w-screen-2xl mx-auto flex flex-col gap-3 snap-y relative pt-36 md:pt-44">
         <Bar scale={scrollYProgress} />
 
-        <section className="flex flex-col gap-10 relative">
-          <Hero />
-          <div className="flex flex-col items-center">
-            <KingCard />
+        <section className="flex flex-col gap-10">
+          <div className="flex flex-col md:flex-row gap-10 items-center flex-wrap justify-center">
+            <Hero />
+            <div className="flex flex-col items-center">
+              <KingCard />
+            </div>
           </div>
           <Title />
         </section>
 
-        <main>
-          <FullScreenSection className="top-4">
+        <main className="flex flex-col gap-4">
+          <FullScreenSection className="top-4 sm:top-8">
             <Artist />
           </FullScreenSection>
-          <FullScreenSection className="top-8">
+          <FullScreenSection className="top-8 sm:top-16">
             <Builder />
           </FullScreenSection>
-          <FullScreenSection className="top-12">
+          <FullScreenSection className="top-12 sm:top-24">
             <Fluidity />
           </FullScreenSection>
-          <FullScreenSection className="top-16">
+          <FullScreenSection className="top-16 sm:top-32">
             <Breakpoint />
           </FullScreenSection>
-          <FullScreenSection className="top-20">
+          <FullScreenSection className="top-20 sm:top-40">
             <Secrets />
           </FullScreenSection>
-          <FullScreenSection className="top-24">
+          <FullScreenSection className="top-24 sm:top-48">
             <Boosted />
           </FullScreenSection>
         </main>
 
-        <section className="flex flex-col justify-between h-[calc(100vh-24px)] pb-6">
+        <section className="flex flex-col justify-between h-[calc(100vh-24px)] sm:h-[calc(100vh-40px)] pb-6">
           <EnterFinals />
           <Footer />
         </section>

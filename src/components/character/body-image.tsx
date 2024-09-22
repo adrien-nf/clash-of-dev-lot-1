@@ -9,6 +9,7 @@ export function BodyImage({ src, alt, children }: BodyImageProps) {
         src={src}
         alt={alt}
         className="object-contain max-w-full max-h-full"
+        draggable={false}
       />
 
       <div className="absolute flex flex-col right-0 top-0 translate-x-12 -translate-y-8 sm:hidden">
