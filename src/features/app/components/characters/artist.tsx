@@ -1,7 +1,7 @@
 import { Character } from "@/components/character";
 import { PointerIcon } from "@/components/icons";
 import { Lina } from "../tags";
-import image from "@/assets/characters/artist.png";
+import image from "@/assets/characters/artist.webp";
 
 export function Artist() {
   return (

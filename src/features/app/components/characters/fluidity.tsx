@@ -2,7 +2,7 @@ import { Character } from "@/components/character";
 import { AsterixIcon } from "@/components/icons";
 import { Lina } from "../tags";
 import { Chris } from "../tags/chris";
-import image from "@/assets/characters/fluidity.png";
+import image from "@/assets/characters/fluidity.webp";
 
 export function Fluidity() {
   return (

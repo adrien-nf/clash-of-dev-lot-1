@@ -2,7 +2,7 @@ import { Character } from "@/components/character";
 import { SwitchIcon } from "@/components/icons";
 import { Lina } from "../tags";
 import { Chris } from "../tags/chris";
-import image from "@/assets/characters/secrets.png";
+import image from "@/assets/characters/secrets.webp";
 
 export function Secrets() {
   return (

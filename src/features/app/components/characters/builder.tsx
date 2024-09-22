@@ -1,7 +1,7 @@
 import { Character } from "@/components/character";
 import { BracketsIcon } from "@/components/icons";
 import { Chris } from "../tags/chris";
-import image from "@/assets/characters/builder.png";
+import image from "@/assets/characters/builder.webp";
 
 export function Builder() {
   return (

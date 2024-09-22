@@ -2,7 +2,7 @@ import { Character } from "@/components/character";
 import { LightningIcon } from "@/components/icons";
 import { Lina } from "../tags";
 import { Chris } from "../tags/chris";
-import image from "@/assets/characters/breakpoint.png";
+import image from "@/assets/characters/breakpoint.webp";
 
 export function Breakpoint() {
   return (

@@ -2,7 +2,7 @@ import { Character } from "@/components/character";
 import { SmileyIcon } from "@/components/icons";
 import { Lina } from "../tags";
 import { Chris } from "../tags/chris";
-import image from "@/assets/characters/boosted.png";
+import image from "@/assets/characters/boosted.webp";
 
 export function Boosted() {
   return (

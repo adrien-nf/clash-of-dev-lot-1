@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { Character } from "./character";
-import image from "../../assets/characters/artist.png";
+import image from "../../assets/characters/artist.webp";
 import { PointerIcon } from "../icons/pointer-icon";
 
 const meta = {
