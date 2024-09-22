@@ -8,7 +8,7 @@ export type CharacterProps = PropsWithChildren & {
 };
 
 export function Character({ children, color = "purple" }: CharacterProps) {
-  return <div className={characterStyles({ color })}>{children}</div>;
+  return <article className={characterStyles({ color })}>{children}</article>;
 }
 
 Character.Header = Header;

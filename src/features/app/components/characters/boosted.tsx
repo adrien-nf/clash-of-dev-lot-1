@@ -28,8 +28,8 @@ export function Boosted() {
           <p>
             Il excelle dans tous les domaines, alliant design, propreté de code,
             réactivité, animations fluides et créativité cachée.{" "}
-            <span className="font-semibold">Un vrai prodige</span>
-            qui a su briller dans chaque aspect du développement.
+            <span className="font-semibold">Un vrai prodige</span> qui a su
+            briller dans chaque aspect du développement.
           </p>
           <p>
             Ce dev aux <span className="font-semibold">multitalents</span> a
