@@ -4,11 +4,11 @@ import { BracketInCircleIcon, SmileInCircleIcon } from "@/components/icons";
 export function Title() {
   return (
     <HorizontalScroll>
-      <span className="flex flex-row gap-2 items-center text-6xl text-nowrap font-semibold">
-        {`<A>`}Front les Tous!
-        <BracketInCircleIcon className="min-w-8 min-h-8" />
-        Clash of Dev
-        <SmileInCircleIcon className="min-w-8 min-8" />
+      <span className="gap-2 items-center text-[70px] font-semibold my-6">
+        <span>{`<A>`}Front les Tous!</span>
+        <BracketInCircleIcon className="min-w-8 min-h-8 inline-block relative align-middle mx-4" />
+        <span>Clash of Dev</span>
+        <SmileInCircleIcon className="min-w-8 min-8 inline-block relative align-middle mx-4" />
       </span>
     </HorizontalScroll>
   );

@@ -7,7 +7,7 @@ export type BarProps = {
 export function Bar({ scale }: BarProps) {
   return (
     <motion.div
-      className="fixed top-0 left-0 right-0 h-1 bg-cod-dark origin-[0%]"
+      className="fixed top-0 left-0 right-0 h-1 bg-cod-dark origin-[0%] z-10"
       style={{ scaleX: scale }}
     />
   );

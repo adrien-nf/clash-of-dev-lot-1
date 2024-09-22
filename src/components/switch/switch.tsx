@@ -2,10 +2,7 @@ import * as RadixSwitch from "@radix-ui/react-switch";
 
 export function Switch() {
   return (
-    <RadixSwitch.Root
-      className="w-[54px] h-[29px] bg-[#848482] rounded-full relative transition-all data-[state=checked]:bg-cod-dark outline-none cursor-default"
-      style={{ "-webkit-tap-highlight-color": "rgba(0, 0, 0, 0)" }}
-    >
+    <RadixSwitch.Root className="w-[54px] h-[29px] bg-[#848482] rounded-full relative transition-all data-[state=checked]:bg-cod-dark outline-none cursor-default">
       <RadixSwitch.Thumb className="block w-[23px] h-[23px] bg-white rounded-full transition-transform duration-100 translate-x-0.5 will-change-transform data-[state=checked]:translate-x-[29px]">
         <svg
           width="23"

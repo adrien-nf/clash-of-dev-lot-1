@@ -14,6 +14,7 @@ import { KingCard } from "@/components/king-card";
 import { useScroll } from "framer-motion";
 import { Bar } from "@/components/bar";
 import { StickyHeader } from "@/components/sticky-header";
+import { Hero } from "@/features/app/components/hero";
 
 export const App = () => {
   const { scrollYProgress } = useScroll();
@@ -22,14 +23,16 @@ export const App = () => {
     <>
       <StickyHeader />
 
-      <div className="p-3 max-w-screen-2xl flex flex-col gap-3 snap-y relative">
+      <div className="p-3 max-w-screen-2xl flex flex-col gap-3 snap-y relative pt-36">
         <Bar scale={scrollYProgress} />
-        <header className="flex flex-col gap-3 relative">
+
+        <section className="flex flex-col gap-10 relative">
+          <Hero />
           <div className="flex flex-col items-center">
             <KingCard />
           </div>
           <Title />
-        </header>
+        </section>
 
         <main>
           <FullScreenSection className="top-4">
