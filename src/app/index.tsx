@@ -18,7 +18,6 @@ import { Hero } from "@/features/app/components/hero";
 
 export const App = () => {
   const { scrollYProgress } = useScroll();
-
   return (
     <>
       <StickyHeader />
