@@ -30,6 +30,15 @@ export function EnterFinals({ hasEasterEggBeenSolved }: EnterFinalsProps) {
                 : "Click Me ? Might enter the finals"
               : "Click Me ? Might enter the finals"}
           </span>
+
+          {hasBeenClicked && hasEasterEggBeenSolved && (
+            <div className="flex flex-col gap-4 text-2xl">
+              <span>En espérant vous revoir en finale du Clash of Dev.</span>
+              <a href="https://www.linkedin.com/in/adrien-nf/">Mon LinkedIn</a>
+              <a href="https://www.adriennefe.com/">Mon Blog</a>
+              <span className="text-right">- Adrien NEFE</span>
+            </div>
+          )}
         </div>
       </div>
       <div className="self-center relative">

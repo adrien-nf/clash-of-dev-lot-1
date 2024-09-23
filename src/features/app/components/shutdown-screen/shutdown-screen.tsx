@@ -28,8 +28,8 @@ export function ShutdownScreen({
     setTimeout(() => {
       setIsOn(true);
       setHasEasterEggBeenSolved(true);
-    }, 5000);
-  }, [setIsCodeCorrect, setIsOn]);
+    }, 10000);
+  }, [setIsCodeCorrect, setIsOn, setHasEasterEggBeenSolved]);
 
   const handleKeyPressed = useCallback(
     (event: KeyboardEvent) => {
@@ -115,7 +115,10 @@ export function ShutdownScreen({
             <SecretsImage />
             <AnimatedText
               className="text-cod-white"
-              text={["Tu as réussi! En route pour remporter le Clash of Dev."]}
+              text={[
+                "Tu as réussi! En route pour remporter le Clash of Dev.",
+                "Je te donne accès au bouton Enter Next Level.",
+              ]}
             />
           </div>
         )}
