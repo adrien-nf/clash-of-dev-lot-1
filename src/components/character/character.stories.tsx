@@ -20,15 +20,7 @@ const meta = {
         </Character.Header.Graduation>
         <Character.Header.Name>L'artiste de renom</Character.Header.Name>
         <Character.Header.Tags>
-          <Character.Header.Tags.Item side="top-left">
-            @maislina
-          </Character.Header.Tags.Item>
-          <Character.Header.Tags.Item side="top-left">
-            @sometime.crea
-          </Character.Header.Tags.Item>
-          <Character.Header.Tags.Item side="top-left">
-            @chris
-          </Character.Header.Tags.Item>
+          <Character.Header.Tags.Item name="@maislina" side="top-left" />
         </Character.Header.Tags>
       </Character.Header>
       <Character.Body>
