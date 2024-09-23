@@ -1,52 +1,27 @@
-# React + TypeScript + Vite
+# Clash of Dev
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ma participation au Clash of Dev.
 
-Currently, two official plugins are available:
+## Critères
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![alt text](image.png)
 
-## Expanding the ESLint configuration
+### Performances
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Le site est optimisé au niveau des images, qui sont des WEBP compressés. Le score de performances sont ainsi élevées. Tous les assets sont minifiés au possible, et le chargement est différé pour assurer un site rapide.
 
-- Configure the top-level `parserOptions` property like this:
+### Accessibilité A11Y
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-});
-```
+Le site est accessible au possible, navigable au clavier. Les seuls points d'amélioration sont au niveau des contrastes de couleur. J'ai fait le choix de garder les couleurs de la maquette, l'objectif principal étant de garder les couleurs de la maquette.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Les éléments sémantiques HTML sont utilisés au possible: cela permet de minimiser l'utilisation du aria. La règle n°1 du aria étant de ne pas l'utiliser: les tags aria sont une rustine lorsque l'on utilise mal l'HTML déjà à notre disposition. J'en ai utilisé à quelques endroits précis.
 
-```js
-// eslint.config.js
-import react from "eslint-plugin-react";
+Une fausse bonne idée est au niveau des images: j'ai volontairement laissé des alt="", pour les images inutiles. Il s'agit là de la bonne pratique, les lecteurs d'écran savent qu'ils peuvent passer cette image, qui n'apporte rien. La mauvaise pratique est de ne pas mettre d'alt du tout.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: "18.3" } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs["jsx-runtime"].rules,
-  },
-});
-```
+## Easter Egg
 
-# clash-of-dev-lot-1
+L'Easter Egg est accessible via le "Switch" situé en haut à droite de l'écran.
+
+Il s'agit d'une petite énigme où l'on droit retrouver un code perdu.
+
+Ce code est le suivant: HAUT, HAUT, BAS, BAS, GAUCHE, DROITE, GAUCHE, DROITE, B, A, ENTRÉE
