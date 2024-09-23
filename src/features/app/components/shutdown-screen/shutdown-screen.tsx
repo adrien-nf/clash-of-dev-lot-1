@@ -6,9 +6,13 @@ import { SecretsImage } from "../characters/secrets-image";
 
 export type ShutdownScreenProps = {
   setIsOn: (value: boolean) => void;
+  setHasEasterEggBeenSolved: (value: boolean) => void;
 };
 
-export function ShutdownScreen({ setIsOn }: ShutdownScreenProps) {
+export function ShutdownScreen({
+  setIsOn,
+  setHasEasterEggBeenSolved,
+}: ShutdownScreenProps) {
   const [count, setCount] = useState(0);
   const [keys, setKeys] = useState<string[]>([]);
   const [isCodeCorrect, setIsCodeCorrect] = useState(false);
@@ -23,6 +27,7 @@ export function ShutdownScreen({ setIsOn }: ShutdownScreenProps) {
 
     setTimeout(() => {
       setIsOn(true);
+      setHasEasterEggBeenSolved(true);
     }, 5000);
   }, [setIsCodeCorrect, setIsOn]);
 
@@ -99,7 +104,7 @@ export function ShutdownScreen({ setIsOn }: ShutdownScreenProps) {
           </span>
         )}
 
-        {count > 7 && !isCodeCorrect && (
+        {count > 4 && !isCodeCorrect && (
           <span className="text-white italic">
             Haut, Haut, Bas, Bas, Gauche, Droite, Gauche, Droite, B, A, Entrée!
           </span>

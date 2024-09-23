@@ -22,12 +22,18 @@ export const App = () => {
   const { scrollYProgress } = useScroll();
 
   const [isOn, setIsOn] = useState(true);
+  const [hasEasterEggBeenSolved, setHasEasterEggBeenSolved] = useState(false);
 
   return (
     <>
       <StickyHeader isOn={isOn} setIsOn={setIsOn} />
 
-      {!isOn && <ShutdownScreen setIsOn={setIsOn} />}
+      {!isOn && (
+        <ShutdownScreen
+          setIsOn={setIsOn}
+          setHasEasterEggBeenSolved={setHasEasterEggBeenSolved}
+        />
+      )}
 
       <div className="p-3 sm:p-6 md:max-w-screen-xl mx-auto flex flex-col gap-3 snap-y relative pt-36 md:pt-44">
         <Bar scale={scrollYProgress} />
@@ -64,7 +70,7 @@ export const App = () => {
         </main>
 
         <section className="flex flex-col justify-between h-[calc(100vh-24px)] sm:h-[calc(100vh-40px)] pb-6">
-          <EnterFinals />
+          <EnterFinals hasEasterEggBeenSolved={hasEasterEggBeenSolved} />
           <Footer />
         </section>
       </div>
