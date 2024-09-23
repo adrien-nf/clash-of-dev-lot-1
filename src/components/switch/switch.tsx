@@ -1,8 +1,11 @@
 import * as RadixSwitch from "@radix-ui/react-switch";
 
-export function Switch() {
+export function Switch(props: RadixSwitch.SwitchProps) {
   return (
-    <RadixSwitch.Root className="w-[54px] h-[29px] bg-[#848482] rounded-full relative transition-all data-[state=checked]:bg-cod-dark outline-none cursor-default">
+    <RadixSwitch.Root
+      className=" w-[54px] h-[29px] bg-[#848482] rounded-full relative transition-all data-[state=checked]:bg-cod-dark outline-none cursor-pointer"
+      {...props}
+    >
       <RadixSwitch.Thumb className="block w-[23px] h-[23px] bg-white rounded-full transition-transform duration-100 translate-x-0.5 will-change-transform data-[state=checked]:translate-x-[29px]">
         <svg
           width="23"

@@ -1,7 +1,7 @@
 import { Character } from "@/components/character";
 import { BracketsIcon } from "@/components/icons";
 import { Chris } from "../tags/chris";
-import image from "@/assets/characters/builder.webp";
+import { BuilderImage } from "./builder-image";
 
 export function Builder() {
   return (
@@ -21,8 +21,12 @@ export function Builder() {
         </Character.Header.Tags>
       </Character.Header>
       <Character.Body>
-        <Character.Body.Image src={image}>
-          <Chris />
+        <Character.Body.Image>
+          <BuilderImage />
+
+          <Character.Body.Image.Tags>
+            <Chris />
+          </Character.Body.Image.Tags>
         </Character.Body.Image>
         <Character.Body.Description>
           <p>

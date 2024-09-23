@@ -2,7 +2,7 @@ import { Character } from "@/components/character";
 import { LightningIcon } from "@/components/icons";
 import { Lina } from "../tags";
 import { Chris } from "../tags/chris";
-import image from "@/assets/characters/breakpoint.webp";
+import { BreakpointImage } from "./breakpoint-image";
 
 export function Breakpoint() {
   return (
@@ -25,9 +25,13 @@ export function Breakpoint() {
         </Character.Header.Tags>
       </Character.Header>
       <Character.Body>
-        <Character.Body.Image src={image}>
-          <Lina />
-          <Chris />
+        <Character.Body.Image>
+          <BreakpointImage />
+
+          <Character.Body.Image.Tags>
+            <Lina />
+            <Chris />
+          </Character.Body.Image.Tags>
         </Character.Body.Image>
         <Character.Body.Description>
           <p>

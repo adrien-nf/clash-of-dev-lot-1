@@ -1,7 +1,7 @@
 import { Character } from "@/components/character";
 import { PointerIcon } from "@/components/icons";
 import { Lina } from "../tags";
-import image from "@/assets/characters/artist.webp";
+import { ArtistImage } from "./artist-image";
 
 export function Artist() {
   return (
@@ -21,8 +21,12 @@ export function Artist() {
         </Character.Header.Tags>
       </Character.Header>
       <Character.Body>
-        <Character.Body.Image src={image}>
-          <Lina />
+        <Character.Body.Image>
+          <ArtistImage />
+
+          <Character.Body.Image.Tags>
+            <Lina />
+          </Character.Body.Image.Tags>
         </Character.Body.Image>
         <Character.Body.Description>
           <p>

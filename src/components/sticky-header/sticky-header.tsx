@@ -10,7 +10,7 @@ export function StickyHeader() {
       <span className="text-cod-dark text-sm font-bold text-center">0%</span>
 
       <span className="text-cod-dark text-sm font-bold flex flex-row justify-end">
-        <Switch />
+        <Switch aria-label="Ouvrir la console de l'easter egg." />
       </span>
     </header>
   );

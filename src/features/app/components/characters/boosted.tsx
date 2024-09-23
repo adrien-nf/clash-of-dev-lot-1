@@ -2,7 +2,7 @@ import { Character } from "@/components/character";
 import { SmileyIcon } from "@/components/icons";
 import { Lina } from "../tags";
 import { Chris } from "../tags/chris";
-import image from "@/assets/characters/boosted.webp";
+import { BoostedImage } from "./boosted-image";
 
 export function Boosted() {
   return (
@@ -23,9 +23,13 @@ export function Boosted() {
         </Character.Header.Tags>
       </Character.Header>
       <Character.Body>
-        <Character.Body.Image src={image}>
-          <Lina />
-          <Chris />
+        <Character.Body.Image>
+          <BoostedImage />
+
+          <Character.Body.Image.Tags>
+            <Lina />
+            <Chris />
+          </Character.Body.Image.Tags>
         </Character.Body.Image>
         <Character.Body.Description>
           <p>

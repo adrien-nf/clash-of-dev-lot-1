@@ -2,7 +2,7 @@ import { Character } from "@/components/character";
 import { AsterixIcon } from "@/components/icons";
 import { Lina } from "../tags";
 import { Chris } from "../tags/chris";
-import image from "@/assets/characters/fluidity.webp";
+import { FluidityImage } from "./fluidity-image";
 
 export function Fluidity() {
   return (
@@ -23,9 +23,13 @@ export function Fluidity() {
         </Character.Header.Tags>
       </Character.Header>
       <Character.Body>
-        <Character.Body.Image src={image}>
-          <Lina />
-          <Chris />
+        <Character.Body.Image>
+          <FluidityImage />
+
+          <Character.Body.Image.Tags>
+            <Lina />
+            <Chris />
+          </Character.Body.Image.Tags>
         </Character.Body.Image>
         <Character.Body.Description>
           <p>

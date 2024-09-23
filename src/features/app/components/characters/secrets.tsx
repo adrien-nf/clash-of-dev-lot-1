@@ -3,6 +3,7 @@ import { SwitchIcon } from "@/components/icons";
 import { Lina } from "../tags";
 import { Chris } from "../tags/chris";
 import image from "@/assets/characters/secrets.webp";
+import { SecretsImage } from "./secrets-image";
 
 export function Secrets() {
   return (
@@ -23,9 +24,13 @@ export function Secrets() {
         </Character.Header.Tags>
       </Character.Header>
       <Character.Body>
-        <Character.Body.Image src={image}>
-          <Lina />
-          <Chris />
+        <Character.Body.Image>
+          <SecretsImage />
+
+          <Character.Body.Image.Tags>
+            <Lina />
+            <Chris />
+          </Character.Body.Image.Tags>
         </Character.Body.Image>
         <Character.Body.Description>
           <p>

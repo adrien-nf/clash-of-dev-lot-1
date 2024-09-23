@@ -1,7 +1,8 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { Character } from "./character";
-import image from "../../assets/characters/artist.webp";
 import { PointerIcon } from "../icons/pointer-icon";
+import { ArtistImage } from "@/features/app/components/characters/artist-image";
+import { Lina } from "@/features/app/components/tags";
 
 const meta = {
   component: Character,
@@ -31,7 +32,13 @@ const meta = {
         </Character.Header.Tags>
       </Character.Header>
       <Character.Body>
-        <Character.Body.Image src={image} />
+        <Character.Body.Image>
+          <ArtistImage />
+
+          <Character.Body.Image.Tags>
+            <Lina />
+          </Character.Body.Image.Tags>
+        </Character.Body.Image>
         <Character.Body.Description>
           <p>
             <span className="font-semibold">Le design</span>, c'est son terrain

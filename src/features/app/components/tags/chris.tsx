@@ -8,7 +8,7 @@ export type ChrisProps = Pick<TagsItemProps, "color"> & {
 export function Chris(props: ChrisProps) {
   return (
     <Character.Header.Tags.Item side="top-left" {...props}>
-      @LLCoolChris
+      @LLCoolChris_
     </Character.Header.Tags.Item>
   );
 }

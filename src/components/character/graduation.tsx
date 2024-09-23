@@ -6,9 +6,9 @@ export type GraduationProps = PropsWithChildren;
 
 export function Graduation({ children }: GraduationProps) {
   return (
-    <div className="font-semibold text-xs text-cod-dark text-opacity-80 gap-1 flex flex-col">
+    <section className="font-semibold text-xs text-cod-dark text-opacity-80 gap-1 flex flex-col">
       {children}
-    </div>
+    </section>
   );
 }
 

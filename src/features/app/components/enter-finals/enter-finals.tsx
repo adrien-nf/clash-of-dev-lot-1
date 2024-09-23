@@ -16,7 +16,7 @@ export function EnterFinals() {
         </div>
       </div>
       <div className="self-center relative">
-        <button className="relative peer block bg-cod-beige py-[22px] px-8 rounded-[60px] text-nowrap z-10 text-center hover:py-7 hover:px-10 transition-all font-semibold">
+        <button className="relative peer block bg-cod-beige py-[22px] px-8 rounded-[60px] text-nowrap z-10 text-center hover:py-7 hover:px-10 transition-all font-semibold ease-in-out">
           Enter Next Level
         </button>
         <StarBubble className="absolute top-0 -translate-x-1/4 -translate-y-1/4 transition-transform peer-hover:-translate-x-1/2 peer-hover:-translate-y-1/3 z-20" />

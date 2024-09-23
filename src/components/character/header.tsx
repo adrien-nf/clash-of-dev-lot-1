@@ -7,9 +7,9 @@ export type HeaderProps = PropsWithChildren;
 
 export function Header({ children }: HeaderProps) {
   return (
-    <section className="flex flex-row gap-x-10 gap-y-4 flex-wrap">
+    <header className="flex flex-row gap-x-10 gap-y-4 flex-wrap">
       {children}
-    </section>
+    </header>
   );
 }
 

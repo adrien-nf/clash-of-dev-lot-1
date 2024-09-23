@@ -23,7 +23,7 @@ export const App = () => {
     <>
       <StickyHeader />
 
-      <div className="p-3 sm:p-6 max-w-screen-2xl mx-auto flex flex-col gap-3 snap-y relative pt-36 md:pt-44">
+      <div className="p-3 sm:p-6 md:max-w-screen-xl mx-auto flex flex-col gap-3 snap-y relative pt-36 md:pt-44">
         <Bar scale={scrollYProgress} />
 
         <section className="flex flex-col gap-10">
