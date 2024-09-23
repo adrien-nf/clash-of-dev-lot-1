@@ -1,9 +1,13 @@
 import * as RadixSwitch from "@radix-ui/react-switch";
+import { twMerge } from "tailwind-merge";
 
-export function Switch(props: RadixSwitch.SwitchProps) {
+export function Switch({ className, ...props }: RadixSwitch.SwitchProps) {
   return (
     <RadixSwitch.Root
-      className=" w-[54px] h-[29px] bg-[#848482] rounded-full relative transition-all data-[state=checked]:bg-cod-dark outline-none cursor-pointer"
+      className={twMerge(
+        "w-[54px] h-[29px] bg-[#848482] rounded-full relative transition-all data-[state=checked]:bg-cod-dark outline-none cursor-pointer",
+        className
+      )}
       {...props}
     >
       <RadixSwitch.Thumb className="block w-[23px] h-[23px] bg-white rounded-full transition-transform duration-100 translate-x-0.5 will-change-transform data-[state=checked]:translate-x-[29px]">

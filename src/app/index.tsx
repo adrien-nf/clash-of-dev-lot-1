@@ -15,12 +15,19 @@ import { useScroll } from "framer-motion";
 import { Bar } from "@/components/bar";
 import { StickyHeader } from "@/components/sticky-header";
 import { Hero } from "@/features/app/components/hero";
+import { ShutdownScreen } from "@/features/app/components/shutdown-screen";
+import { useState } from "react";
 
 export const App = () => {
   const { scrollYProgress } = useScroll();
+
+  const [isOn, setIsOn] = useState(true);
+
   return (
     <>
-      <StickyHeader />
+      <StickyHeader isOn={isOn} setIsOn={setIsOn} />
+
+      {!isOn && <ShutdownScreen setIsOn={setIsOn} />}
 
       <div className="p-3 sm:p-6 md:max-w-screen-xl mx-auto flex flex-col gap-3 snap-y relative pt-36 md:pt-44">
         <Bar scale={scrollYProgress} />

@@ -3,7 +3,12 @@ import { Switch } from "../switch";
 import { useAnimationFrame } from "framer-motion";
 import { twMerge } from "tailwind-merge";
 
-export function StickyHeader() {
+export type StickyHeaderProps = {
+  isOn: boolean;
+  setIsOn: (value: boolean) => void;
+};
+
+export function StickyHeader({ isOn, setIsOn }: StickyHeaderProps) {
   const [scrollPercent, setScrollPercent] = useState(0);
 
   useAnimationFrame(() => {
@@ -22,7 +27,7 @@ export function StickyHeader() {
 
       <span
         className={twMerge(
-          "text-cod-dark text-sm font-bold text-center",
+          "text-cod-dark text-sm font-bold text-center z-10",
           scrollPercent > 99.23 && "text-cod-white"
         )}
       >
@@ -30,7 +35,12 @@ export function StickyHeader() {
       </span>
 
       <span className="text-cod-dark text-sm font-bold flex flex-row justify-end">
-        <Switch aria-label="Ouvrir la console de l'easter egg." />
+        <Switch
+          aria-label="Ouvrir la console de l'easter egg."
+          checked={isOn}
+          onCheckedChange={setIsOn}
+          className="z-50"
+        />
       </span>
     </header>
   );
