@@ -23,8 +23,8 @@ export function BoostedImage() {
         }}
         draggable={false}
         src={char}
-        alt="Secret, la prêtre du cache-cache. Elle tient un grimoire et une baguette magique ornée d'une étoile."
-        className="absolute h-2/3 bottom-[10%] right-[40%]"
+        alt="Boosted, le sur-homme et prêt à tout, versatilité incarnée. Il tient une grosse épée et est accompagné d'une magicienne."
+        className="absolute h-2/3 bottom-[10%] right-[37%] md:right-[40%]"
       />
       <motion.img
         style={{ display: "block", margin: "0 auto" }}
@@ -41,7 +41,7 @@ export function BoostedImage() {
         draggable={false}
         src={wand}
         alt=""
-        className="absolute h-[30%] bottom-[30%] right-[15%]"
+        className="absolute h-[30%] bottom-[30%] right-[5%] md:right-[15%]"
       />
     </div>
   );
